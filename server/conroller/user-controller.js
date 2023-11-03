@@ -27,6 +27,7 @@ export const userLogin= async(request,response)=>{
         
         const user= await User.findOne({username:request.body.username,password:request.body.password});
         if(user){
+            
             return response.status(200).json({data:user});
         }else{
             return response.status(401).json('invalid login')

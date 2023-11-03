@@ -5,7 +5,7 @@ import Banners from "./Banners";
 import { Box, styled } from "@mui/material";
 import { getProducts } from "../../redux/actions/productAction";
 import {useDispatch, useSelector} from 'react-redux';
-import Slide from './Slide.js';
+import Slide from './Slide';
 import MidSlide from "./MidSlide";
 import MidSection from "./MidSection";
 

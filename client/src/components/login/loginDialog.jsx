@@ -94,14 +94,14 @@ const loginInitialValues={
 }
 
 
-const LoginDialog = ({open, setOpen}) => {
+const LoginDialog = ({open, setOpen }) => {
  
    const[acc,toggleAccount]=useState(accountInitialValue.login);
    const[signup,setSignup]=useState(signupInitialValue);
    const[login, setLogin]=useState(loginInitialValues);
    const[error,setError]=useState(false);
 
-   const{setAccount}=useContext(DataContext);
+    const{setAccount}=useContext(DataContext);
 
    
    const handleClose=()=>{
@@ -131,6 +131,7 @@ const LoginDialog = ({open, setOpen}) => {
         
         if(response.status===200){
             handleClose();
+            console.log(response.data.data.firstname);
             setAccount(response.data.data.firstname);
            
         }else{

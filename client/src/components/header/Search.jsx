@@ -33,7 +33,7 @@ const ListWrapper=styled(List)`
 const Search=()=>{
     const dispatch=useDispatch();
     const[text,setText]=useState('');
-    const {products}=useSelector(state=>state.getProducts);
+    const {products}=useSelector(state=>state.getProducts);                     
 
     useEffect(()=>{
         dispatch(getProducts());

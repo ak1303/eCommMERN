@@ -6,7 +6,7 @@ import { Box, Grid, styled } from "@mui/material";
 import ActionItem from "./ActionItem";
 import ProductDetail from "./ProductDetail";
 
-const Component=styled(Box)`
+const Component=styled(Box)` 
     background:#f2f2f2;
     margin-top:55px;
 `;

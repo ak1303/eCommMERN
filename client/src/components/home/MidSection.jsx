@@ -8,7 +8,7 @@ const Wrapper =styled(Grid)`
 const Image=styled('img')(({theme})=>({
     marginTop:10, 
     width:'100%',
-    display:"flex",
+    display:'flex',
     justifyContent:"space-between",
     [theme.breakpoints.down('md')]:{
         objectFit:'cover',
